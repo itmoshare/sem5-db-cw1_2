@@ -1,0 +1,10 @@
+D:\Google Drive\documents\ifmo\5semester\Db\coursew1\coursew1\bin\Debug\coursew1.dacpac
+D:\Google Drive\documents\ifmo\5semester\Db\coursew1\coursew1\bin\Debug\coursew1.dll
+D:\Google Drive\documents\ifmo\5semester\Db\coursew1\coursew1\bin\Debug\coursew1.pdb
+D:\Google Drive\documents\ifmo\5semester\Db\coursew1\coursew1\obj\Debug\coursew1.dll
+D:\Google Drive\documents\ifmo\5semester\Db\coursew1\coursew1\obj\Debug\coursew1.pdb
+C:\Users\Andrey Shumeev\Desktop\coursew1\coursew1\bin\Debug\coursew1.dacpac
+C:\Users\Andrey Shumeev\Desktop\coursew1\coursew1\obj\Debug\coursew1.dll
+C:\Users\Andrey Shumeev\Desktop\coursew1\coursew1\obj\Debug\coursew1.pdb
+C:\Users\Andrey Shumeev\Desktop\coursew1\coursew1\bin\Debug\coursew1.dll
+C:\Users\Andrey Shumeev\Desktop\coursew1\coursew1\bin\Debug\coursew1.pdb
