@@ -54,8 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleCrudParser.cs" />
     <Compile Include="EF\Models\Client.cs" />
-    <Compile Include="EF\DbContext.cs" />
+    <Compile Include="EF\MyDbContext.cs" />
     <Compile Include="EF\Models\Equipment.cs" />
     <Compile Include="EF\Models\Person.cs" />
     <Compile Include="EF\Models\Position.cs" />

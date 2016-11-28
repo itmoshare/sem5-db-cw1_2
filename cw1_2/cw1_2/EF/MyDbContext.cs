@@ -3,10 +3,10 @@ using cw1_2.EF.Models;
 
 namespace cw1_2.EF
 {
-    public class DbContext : System.Data.Entity.DbContext
+    public class MyDbContext : System.Data.Entity.DbContext
     {
-        public DbContext()
-            : base("name=DbContext")
+        public MyDbContext()
+            : base("name=MyDbContext")
         {
         }
 
