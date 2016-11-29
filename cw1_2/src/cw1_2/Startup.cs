@@ -42,6 +42,9 @@ namespace cw1_2
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseDeveloperExceptionPage();
+            app.UseDatabaseErrorPage();
+
             app.UseMvc();
         }
     }

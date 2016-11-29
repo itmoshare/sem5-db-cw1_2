@@ -8,31 +8,14 @@ using WorkManager.Data;
 namespace cw1_2.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20161129102732_indexes")]
+    partial class indexes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("cw1_2.Model.TrainningClientRelation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("ClientId");
-
-                    b.Property<int>("TrainingId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("TrainingId");
-
-                    b.ToTable("TrainningClientRelation");
-                });
 
             modelBuilder.Entity("cw1_2.Models.Client", b =>
                 {
@@ -246,19 +229,6 @@ namespace cw1_2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TrainingPrograms");
-                });
-
-            modelBuilder.Entity("cw1_2.Model.TrainningClientRelation", b =>
-                {
-                    b.HasOne("cw1_2.Models.Client", "Client")
-                        .WithMany()
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("cw1_2.Models.Training", "Training")
-                        .WithMany()
-                        .HasForeignKey("TrainingId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("cw1_2.Models.Client", b =>
