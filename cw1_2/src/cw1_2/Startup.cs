@@ -45,7 +45,12 @@ namespace cw1_2
             app.UseDeveloperExceptionPage();
             app.UseDatabaseErrorPage();
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
